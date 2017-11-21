@@ -1,5 +1,5 @@
 # Sass Boiler Plate
-Sass boiler plate a good startup point for any simple project.
+Sass mobile first setup template a good startup point for any simple project.
 
 #### main.sass
 This simply stores the imports for all the sass files.

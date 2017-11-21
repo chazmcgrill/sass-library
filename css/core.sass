@@ -1,42 +1,53 @@
 html
-  font-family: 'Roboto', sans-serif
+  font-family: 'Roboto'
   font-size: 20px
   letter-spacing: 0.2px
   height: 100%
-  color: $black
+  color: $text
 
 body
-  background: $grey
+  background: $bg
+  margin: 0
+  padding: 20px
+
+h1
+  text-align: center
+
+.container, button
   border-radius: 2px
 
 .container
-  background: $white
-  border-radius: 2px
-  max-width: 300px
-  
+  background: $light
+  margin: 0 auto
+  padding: 15px
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
 a
   text-decoration: none
-  color: inherit
+  color: $accent
+
+  &:hover
+    color: darken($accent, 10%)
 
 ul
   list-style: none
 
 button
-  font-size: 100%
-  background-color: $blue
-  color: $white
+  background-color: $accent
+  color: $light
+  cursor: pointer
+  font-size: 0.8rem
+  padding: 0.4rem 0.8rem
   border-style: none
-  border-radius: 2px
-  padding: 5px 12px
 
   &:hover
-    background-color: darken($blue, 10%)
+    background-color: darken($accent, 10%)
 
-button .danger
-  background-color: $red
+.danger
+  background-color: $danger
 
   &:hover
-    background-color: darken($red, 10%)
+    background-color: darken($danger, 10%)
 
 .hidden
   display: none
